@@ -1,0 +1,53 @@
+#potatoDiv {
+    position: absolute;
+    top: 100px;
+    left: 45%;
+    z-index: 3;
+    animation: potatoUpDown 5s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite, potatoRotate 8s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
+}
+
+div#potatoDiv {}
+
+img#potato {
+    width: 100%;
+}
+
+img#shadow {
+    width: 280px;
+    position: relative;
+    top: -189px;
+}
+
+div#shadow {
+    width: 200;
+    height: 46px;
+    background-color:  black;
+    position: absolute;
+    top: 680px;
+    left: 761px;
+    z-index: 2;
+    border-radius: 100%;
+    filter: blur(11px) opacity(41%);
+    animation-duration: 5s;
+    animation-name: potatoShadow;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.45, 0.05, 0.55, 0.95);
+}
+
+@keyframes potatoUpDown {
+    0% {top: 30%}
+    50% {top: 35%}
+    100% {top: 30%}
+}
+
+@keyframes potatoRotate {
+    0% {transform: rotate(0deg)}
+    50% {transform: rotate(5deg)}
+    100% {transform: rotate(0deg)}
+}
+
+@keyframes potatoShadow {
+    0% {filter: blur(18px) opacity(38%); width: 150px; left: 786px}
+    50% {filter: blur(10px) opacity(45%); width: 200px; left: 761px}
+    100% {filter: blur(18px) opacity(38%); width: 150px; left: 786px}
+}
