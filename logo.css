@@ -1,7 +1,7 @@
 #potatoDiv {
     position: absolute;
     top: 100px;
-    left: 45%;
+    left: calc(50% - 100px);
     z-index: 3;
     animation: potatoUpDown 5s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite, potatoRotate 8s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
 }
